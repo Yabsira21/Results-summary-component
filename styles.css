@@ -1,0 +1,205 @@
+body {
+  background-color: white;
+  margin: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+h3,
+h1,
+h2 {
+  margin: 0;
+}
+
+/* to make the card center */
+main {
+  display: grid;
+  place-items: center;
+  height: 95vh;
+}
+
+.big-card {
+  width: 720px;
+  height: 500px;
+  background-color: white;
+  border-radius: 7%;
+  box-shadow: 10px 5px 5px rgb(245, 245, 245);
+}
+
+/* for the purple card */
+.purple {
+  border-radius: inherit;
+  color: white;
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-align: center;
+}
+
+.purple h3 {
+  color: hsl(241, 100%, 89%);
+  padding: 30px;
+  font-size: 23px;
+}
+.circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 80px;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+
+h1 {
+  font-size: 70px;
+  padding-top: 50px;
+}
+
+.circle p {
+  position: relative;
+  top: -23px;
+  color: rgb(141, 140, 140);
+  font-size: 17px;
+}
+h2 {
+  padding-top: 30px;
+  font-size: 33px;
+}
+.text {
+  font-size: 17.5px;
+  margin-top: 15px;
+  color: rgb(187, 187, 187);
+  font-weight: 500;
+}
+/* for the second card */
+.white {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+.white h3 {
+  font-size: 23px;
+  font-weight: 700;
+  padding: 30px 0 35px 40px;
+}
+
+.white div {
+  background-color: red;
+  margin-left: 45px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  height: 50px;
+  width: 75%;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+.white div:nth-of-type(1) {
+  background-color: hsla(0, 100%, 67%, 0.05);
+  color: hsl(0, 100%, 67%);
+  padding: auto;
+}
+.white div:nth-of-type(2) {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+.white div:nth-of-type(3) {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+.white div:nth-of-type(4) {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+
+.white img {
+  position: relative;
+  top: 4px;
+  margin: 0 10px;
+}
+
+.white div p {
+  display: inline-block;
+}
+
+.white aside {
+  display: inline-block;
+  text-align: right;
+}
+
+.white button {
+  margin-left: 42px;
+  margin-top: 25px;
+  width: 77%;
+  height: 55px;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+}
+
+.white button:active {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* to make the score the right 😫 */
+.first {
+  position: relative;
+  left: 70px;
+  color: black;
+}
+.third {
+  position: relative;
+  left: 85px;
+  color: black;
+}
+.fourth {
+  position: relative;
+  left: 88px;
+  color: black;
+}
+
+.white span {
+  color: grey;
+}
+
+@media (max-width: 800px) {
+  .purple {
+    float: none;
+    width: 100%;
+  }
+  .white {
+    float: none;
+    width: 100%;
+  }
+  .circle {
+    position: relative;
+    left: 260px;
+  }
+  /* for the score 😫 */
+  /* just adding 260px */
+  .first {
+    position: relative;
+    left: 330px;
+    color: black;
+  }
+  .third {
+    position: relative;
+    left: 345px;
+    color: black;
+  }
+  .fourth {
+    position: relative;
+    left: 348px;
+    color: black;
+  }
+
+  .white span {
+    color: grey;
+  }
+}
